@@ -1,0 +1,136 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg:           #e2e6ef;
+  --btn-bg:       #e8ecf5;
+  --shadow-light: rgba(255, 255, 255, 0.90);
+  --shadow-dark:  rgba(163, 177, 198, 0.68);
+  --icon-idle:    #b0baca;
+  --size:         64px;
+  --font:         'Poppins', sans-serif;
+
+  /* brand colors */
+  --fb:  #1877F2;
+  --tw:  #1DA1F2;
+  --ig:  #E1306C;
+  --li:  #0A66C2;
+  --gh:  #24292e;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+/* ── ROW ── */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ── BASE BUTTON ── */
+.btn {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: var(--btn-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--icon-idle);
+  outline: none;
+  position: relative;
+  transition:
+    color      0.3s ease,
+    box-shadow 0.3s ease,
+    transform  0.2s ease;
+}
+
+.btn svg {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  z-index: 1;
+}
+
+/* ── CONVEX (relevo externo) ── */
+.btn--convex {
+  box-shadow:
+    6px 6px 14px var(--shadow-dark),
+    -6px -6px 14px var(--shadow-light);
+}
+
+.btn--convex:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    8px 10px 18px var(--shadow-dark),
+    -6px -6px 14px var(--shadow-light);
+}
+
+.btn--convex:active {
+  transform: scale(0.93);
+  box-shadow:
+    inset 4px 4px 10px var(--shadow-dark),
+    inset -4px -4px 10px var(--shadow-light);
+}
+
+/* ── CONCAVE (afundado) ── */
+.btn--concave {
+  box-shadow:
+    inset 5px 5px 12px var(--shadow-dark),
+    inset -5px -5px 12px var(--shadow-light);
+}
+
+.btn--concave:hover {
+  box-shadow:
+    inset 6px 6px 14px var(--shadow-dark),
+    inset -6px -6px 14px var(--shadow-light);
+}
+
+.btn--concave:active {
+  box-shadow:
+    inset 2px 2px 6px var(--shadow-dark),
+    inset -2px -2px 6px var(--shadow-light);
+  transform: scale(0.96);
+}
+
+/* ── ICON SCALE ON HOVER ── */
+.btn:hover svg { transform: scale(1.18); }
+
+/* ── BRAND COLORS ON HOVER ── */
+.btn[aria-label="Facebook"]:hover  { color: var(--fb); }
+.btn[aria-label="Twitter"]:hover   { color: var(--tw); }
+.btn[aria-label="Instagram"]:hover { color: var(--ig); }
+.btn[aria-label="LinkedIn"]:hover  { color: var(--li); }
+.btn[aria-label="GitHub"]:hover    { color: var(--gh); }
+
+/* ── STAGGERED ENTRY ── */
+.btn { animation: pop .5s cubic-bezier(.22,1,.36,1) both; }
+
+/* row 1 */
+.row:nth-child(1) .btn:nth-child(1) { animation-delay: .04s; }
+.row:nth-child(1) .btn:nth-child(2) { animation-delay: .10s; }
+.row:nth-child(1) .btn:nth-child(3) { animation-delay: .16s; }
+.row:nth-child(1) .btn:nth-child(4) { animation-delay: .22s; }
+.row:nth-child(1) .btn:nth-child(5) { animation-delay: .28s; }
+
+/* row 2 */
+.row:nth-child(2) .btn:nth-child(1) { animation-delay: .12s; }
+.row:nth-child(2) .btn:nth-child(2) { animation-delay: .18s; }
+.row:nth-child(2) .btn:nth-child(3) { animation-delay: .24s; }
+.row:nth-child(2) .btn:nth-child(4) { animation-delay: .30s; }
+.row:nth-child(2) .btn:nth-child(5) { animation-delay: .36s; }
+
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.72) translateY(12px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
