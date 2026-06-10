@@ -1,60 +1,58 @@
-# Social Media Neumorphism Icons
+# 🌐 Neumorphism Social Media Icons UI
 
-## Visão Geral
-
-**Social Media Neumorphism Icons** é um projeto de interface desenvolvido com foco em design moderno, minimalista e elegante, apresentando ícones de redes sociais utilizando a técnica visual **Neumorphism (Soft UI)**.
-
-O projeto demonstra a criação de componentes visuais sofisticados através do uso de sombras suaves, profundidade sutil e uma paleta de cores neutras, proporcionando uma experiência visual limpa e contemporânea.
+Um projeto moderno de **Ícones de Redes Sociais em Neumorphism**, desenvolvido para praticar conceitos de **HTML5** e **CSS3**, com foco em efeitos de profundidade, sombras suaves e interfaces minimalistas.
 
 ---
 
-## Prévia
+## 📸 Preview do Projeto
 
-A interface exibe ícones das principais redes sociais em dois estilos distintos:
+Interface contendo:
 
-- **Estado Elevado (Raised)** — elementos que aparentam emergir da superfície.
-- **Estado Rebaixado (Inset)** — elementos integrados à superfície, criando um efeito de profundidade interna.
-
-### Redes Sociais Representadas
-
-- Facebook
-- Twitter (X)
-- Instagram
-- LinkedIn
-- GitHub
+* Ícones de redes sociais
+* Efeito Neumorphism (Soft UI)
+* Botões elevados e rebaixados
+* Layout horizontal centralizado
+* Design moderno e elegante
 
 ---
 
-## Características
+## ✨ Tecnologias Utilizadas
 
-- Design inspirado em **Neumorphism / Soft UI**
-- Layout minimalista e moderno
-- Componentes reutilizáveis
-- Estrutura simples e organizada
-- Fácil personalização de cores, tamanhos e sombras
-- Compatível com dispositivos desktop e mobile
+* **HTML5**
+* **CSS3**
+* **Font Awesome**
 
 ---
 
-## Tecnologias Utilizadas
+## 🎨 Características do Design
 
-- HTML5
-- CSS3
-- Flexbox
-- SVG / Font Icons
+* Estilo Neumorphism (Soft UI)
+* Sombras suaves e realistas
+* Efeito de profundidade visual
+* Paleta de cores clean e minimalista
+* Ícones centralizados
+* Interface moderna e responsiva
 
 ---
 
-## Estrutura do Projeto
+## 🚀 Objetivo do Projeto
 
-```text
-project/
-│
-├── index.html
-├── css/
-│   └── style.css
-│
-├── assets/
-│   └── icons/
-│
-└── README.md
+Praticar habilidades de desenvolvimento front-end através da criação de componentes visuais modernos, explorando técnicas de Neumorphism, efeitos de sombras e estilização avançada com CSS.
+
+---
+
+## 📚 Funcionalidades
+
+* Exibição de ícones sociais
+* Botões com efeito elevado (Raised)
+* Botões com efeito interno (Inset)
+* Design minimalista e elegante
+* Estrutura reutilizável para landing pages e portfólios
+* Compatibilidade com diferentes dispositivos
+
+---
+
+## 👨‍💻 Autor
+
+**Gustavo Steferson**
+Estudante de Análise e Desenvolvimento de Sistemas.
